@@ -7,7 +7,7 @@ public class Main {
         Boolean isAdult = true;
         boolean x = true;
 
-        //Как делать commit?
+        //Как делать commit? Изменение на Github :)
         // Commit and push
     }
 }
