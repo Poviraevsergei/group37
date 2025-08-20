@@ -8,6 +8,6 @@ public class Main {
         boolean x = true;
 
         //Как делать commit?
-
+        // Commit and push
     }
 }
