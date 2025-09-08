@@ -2,7 +2,7 @@ package lesson6;
 
 class Car {
     String brand;
-    int year = 1000;
+    int year;
     boolean isEngineStart;
 
     //логический блок - отрабатывает до конструктора
@@ -42,4 +42,13 @@ class Car {
             System.out.println("Автомобиль проехал " + dist);
         }
     }
+
+    String getBrand(){
+        return brand;
+    }
+
+    void plusYear(){
+        ++year;
+    }
+
 }

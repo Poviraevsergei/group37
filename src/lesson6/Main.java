@@ -6,6 +6,9 @@ public class Main {
         skodaCar.startEngine();
         skodaCar.drive(100);
         skodaCar.driveDifDistance(100, 500, 210);
-        System.out.println(skodaCar.year);
+
+        String skodaBrand = skodaCar.getBrand();
+        skodaCar.plusYear();
+        System.out.println(skodaBrand);
     }
 }
