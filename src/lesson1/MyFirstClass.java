@@ -49,9 +49,4 @@ class MyFirstClass {
         result = result + 20;
         System.out.println(result);
     }
-
-    @Override
-    protected void finalize() throws Throwable {
-        super.finalize();
-    }
 }
