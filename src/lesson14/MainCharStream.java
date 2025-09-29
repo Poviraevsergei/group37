@@ -7,7 +7,6 @@ import java.io.IOException;
 public class MainCharStream {
     public static void main(String[] args) {
         StringBuilder sb = new StringBuilder();
-
         try (FileReader fileReader = new FileReader("D:\\group37.txt")) {
             int i;
             while ((i = fileReader.read()) != -1) {
