@@ -1,26 +1,47 @@
 package lesson18;
 
-import java.util.Optional;
-import java.util.Scanner;
-
 public class Main {
     public static void main(String[] args) {
-        String name = "ABR";
-        Optional<String> line = Optional.ofNullable(name);
-        //line.ifPresent(l -> System.out.println(l.length()));
-        //String resultFromOptional = line.orElse("DEFAULT");
-        //String resultFromLambda = line.orElseGet(() -> {
-        //    Scanner scanner = new Scanner(System.in);
-        //    return scanner.nextLine();
-        //});
-        //String resultFromLambda = line.orElseThrow();
-
-        System.out.println(line.filter(n -> n.length() > 5));
-        System.out.println(line.map(n -> n.length()));
-
-        //if (line.isPresent()){
-        //    System.out.println(line);
-        //    System.out.println(line.get());
-        //}
+       String htmlPage = """
+               <!DOCTYPE html>
+               <html lang="en">
+               <head>
+                   <meta charset="UTF-8">
+                   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                   <title>Hello World</title>
+                   <style>
+                       body {
+                           font-family: Arial, sans-serif;
+                           display: flex;
+                           justify-content: center;
+                           align-items: center;
+                           height: 100vh;
+                           margin: 0;
+                           background-color: #f0f0f0;
+                       }
+                       .hello-container {
+                           text-align: center;
+                           padding: 40px;
+                           background-color: white;
+                           border-radius: 10px;
+                           box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+                       }
+                       h1 {
+                           color: #333;
+                           font-size: 3em;
+                       }
+                   </style>
+               </head>
+               <body>
+                   <div class="hello-container">
+                       <h1>Hello, World!</h1>
+                       <p>Welcome to your first HTML page!</p>
+                   </div>
+               </body>
+               </html>
+               """;
+        Human human = new Human("Dima",22);
+        System.out.println(human.name());
+        System.out.println(human);
     }
 }
